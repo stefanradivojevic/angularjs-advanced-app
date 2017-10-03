@@ -1,0 +1,6 @@
+From project folder:
+	npm install,
+	gulp build;
+
+from dist folder:
+	lite-server;
