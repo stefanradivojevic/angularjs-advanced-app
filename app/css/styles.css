@@ -1,0 +1,54 @@
+body {
+  cursor: default;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none; }
+
+table tr:last-child th {
+  padding: 0; }
+  table tr:last-child th input {
+    border: none; }
+
+.tc-search-input-wrapper {
+  padding: 0 !important;
+  position: relative;
+  height: 30px; }
+  .tc-search-input-wrapper .tc-search-input {
+    width: 100%;
+    position: absolute;
+    top: 0; }
+
+.pagination {
+  margin: 0;
+  float: right; }
+
+.tc-num-results {
+  margin: 5px 0 0; }
+
+.tc-no-margin {
+  margin: 0; }
+
+.tc-noresults-msg {
+  position: relative;
+  top: 40px;
+  left: 10px; }
+
+.tc-heading {
+  margin-top: 10px; }
+
+.tc-table-wrapper {
+  min-height: 361px; }
+  .tc-table-wrapper a {
+    cursor: pointer; }
+
+.tc-tr-animated.ng-enter.ng-enter-active, .tc-tr-animated.ng-leave {
+  opacity: 1;
+  height: auto;
+  overflow: hidden;
+  transition: 1s; }
+
+.tc-tr-animated.ng-leave.ng-leave-active, .tc-tr-animated.ng-enter {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 1s; }
