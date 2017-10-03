@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" ng-app="angularJSApp">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>AngularJS App</title>
+	<!--build:css css/styles/style.min.css-->
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="scss/styles.scss">
+	<!--endbuild-->
+</head>
+<body>
+	<div ng-controller="ngController as tc" class="container-fluid">
+    	<div class="row">           
+			<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+				<br>
+				<div class="row text-center">
+					<h2>AngularJS App</h2>
+					<hr><br>
+				</div>
+				<uib-tabset active="activeJustified" justified="true">
+					<uib-tab index="0" heading="Users">
+						<div tc-table columns="users.columns" rows="users.rows" table-title="users.tableTitle"></div>
+					</uib-tab>
+					<uib-tab index="1" heading="Cars">
+						<div tc-table columns="cars.columns" rows="cars.rows"  table-title="cars.tableTitle"></div>
+					</uib-tab>
+					<uib-tab index="2" heading="File Uploads">
+						<div tc-table columns="files.columns" rows="files.rows"  table-title="files.tableTitle"></div>
+					</uib-tab>
+				</uib-tabset>
+			</div>
+		</div>
+	</div>
+
+	<!--build:js js/main.min.js -->
+	<script src="../node_modules/angular/angular.js"></script>
+	<script src="../node_modules/angular-animate/angular-animate.js"></script>
+	<script src="../node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+	<script src="../node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+	<script src="../node_modules/moment/moment.js"></script>
+	<script src="../node_modules/angular-moment/angular-moment.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/services.js"></script>
+	<!-- endbuild -->
+</body>
+</html>
