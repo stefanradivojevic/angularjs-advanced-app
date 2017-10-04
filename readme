@@ -1,6 +1,10 @@
-From project folder:
-	npm install,
-	gulp build;
+* Advanced Example of AngularJS App with Isolated Scope. Styling wasn't important. *
 
-from dist folder:
-	lite-server;
+*** Installation guide: ***
+
+ 0) From project folder:
+	0) npm install,
+	1) gulp build;
+
+ 1) from dist folder:
+	0) lite-server;
